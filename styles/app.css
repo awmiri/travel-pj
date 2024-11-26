@@ -1,3 +1,12 @@
+:root{
+    --orange:#E76F51;
+    --low-orang:#F8E1DB;
+    --white:#FFFFFF;
+    --gray:#D2D2D2;
+    --black:#3B3735;
+
+}
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
