@@ -35,6 +35,9 @@ a{
     background: linear-gradient(rgba(59,55,53,0.5) , rgba(59,55,53,0.5)) , url("../images & icons/images/header-bg.jpg");
     background-position: center;
     background-size: cover;
+    min-height: 30rem;
+    border-bottom-right-radius: 6rem ;
+    border-bottom-left-radius: 6rem ;
 }
 .nav{
     display: flex;
@@ -61,7 +64,14 @@ a{
 
 }
 .nav-menu{
-    display: none;
+    position: fixed;
+    background: var(--black);
+    left: -25rem;
+    top: 0;
+    bottom: 0;
+    width: 25rem;
+    padding: 2rem;
+    transition: all 200ms ease-in;
 }
 .mobile-menu{
 
@@ -70,16 +80,26 @@ a{
 
 }
 .mobile_menu__link{
+    color: var(--white);
 
 }
 .nav-menu__links{
-
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
 }
-.nav-menu__link{
 
+.nav-menu__link{
+    color: var(--white);
+    padding: 1.5rem;
+    width: 100%;
+    text-align: center;
 }
 .nav-menu__link--border{
-
+    border: 1px solid var(--white);
+    padding: 1rem;
+    width: 100%;
+    border-radius: 2rem;
 }
 .header__links{
     display: none;
