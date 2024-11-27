@@ -3,6 +3,7 @@
   --low-orang: #f8e1db;
   --white: #ffffff;
   --gray: #d2d2d2;
+  --gray-brighter: #8d8d8d;
   --black: #3b3735;
 }
 
@@ -18,9 +19,10 @@ html {
 }
 
 body {
+  font-family: "Roboto";
   font-size: 1.6rem;
   line-height: 1.6;
-  font-family: "Roboto";
+  margin: 0 auto;
 }
 
 /*  reset style */
@@ -29,7 +31,14 @@ a {
 }
 
 /* helper style */
-
+.btn {
+  text-align: center;
+  padding: 1.3rem 6.8rem;
+  border-radius: 4rem;
+  font-family: "Roboto Medium";
+  color: var(--white);
+  background: var(--gray);
+}
 /* app css */
 
 .header {
@@ -37,7 +46,7 @@ a {
     url("../images & icons/images/header-bg.jpg");
   background-position: center;
   background-size: cover;
-  min-height: 55rem;
+  min-height: 90vh;
   border-bottom-right-radius: 9rem;
   border-bottom-left-radius: 9rem;
 }
@@ -133,6 +142,7 @@ a {
 .mobile-menu {
 }
 .mobile_menu__list {
+  margin-bottom: 0.9rem;
 }
 .mobile_menu__link {
   color: var(--white);
@@ -232,4 +242,39 @@ a {
 }
 .nav__btn--open .nav__btn-line::before {
   transform: translateY(-8px) rotate(-45deg);
+}
+/* 
+
+===========================
+  create  header content
+===========================
+
+*/
+.header__contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 7rem;
+  color: var(--white);
+}
+.header__content--title {
+  font-family: "achivo black";
+  font-size: 4.2rem;
+  max-width: 42rem;
+  text-wrap: wrap;
+  text-align: center;
+  line-height: 1.5;
+}
+.header__content--text {
+  font-size: 1.8rem;
+  text-wrap: wrap;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.header__content--btn {
+  text-align: center;
+  padding: 1.3rem 6.8rem;
+  background: var(--orange);
+  border-radius: 4rem;
 }

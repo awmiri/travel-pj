@@ -1,4 +1,14 @@
 @media only screen and (min-width: 576px) {
+  .header__content--title {
+    font-family: "achivo black";
+    font-size: 7.2rem;
+    text-wrap: wrap;
+    max-width: 50rem;
+    text-align: center;
+  }
+  .header__content--text {
+    max-width: 50rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
