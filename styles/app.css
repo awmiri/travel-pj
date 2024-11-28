@@ -1,6 +1,7 @@
 :root {
   --orange: #e76f51;
   --low-orang: #f8e1db;
+  --body-bgc: #faf4f2;
   --white: #ffffff;
   --gray: #d2d2d2;
   --gray-brighter: #8d8d8d;
@@ -23,6 +24,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   margin: 0 auto;
+  background: var(--body-bgc);
 }
 
 /*  reset style */
@@ -51,11 +53,9 @@ a {
   border-bottom-left-radius: 9rem;
 }
 /* 
-
 ===========
   nav
 ===========
-
 */
 .nav {
   display: flex;
@@ -68,11 +68,9 @@ a {
   align-items: center;
 }
 /* 
-
 ===========
   logo
 ===========
-
 */
 .app-logo {
   display: block;
@@ -85,11 +83,9 @@ a {
   height: 100%;
 }
 /* 
-
 ============
   main menu
 ============
-
 */
 .menu {
   display: none;
@@ -123,11 +119,9 @@ a {
   margin: 0 auto;
 }
 /* 
-
 ===========================
   navigation menu (mobile)
 ===========================
-
 */
 .nav-menu {
   position: fixed;
@@ -192,11 +186,9 @@ a {
   color: var(--black);
 }
 /* 
-
 ==================================
   navigation menu (mobile) title
 ==================================
-
 */
 .nav-menu__title {
   color: var(--white);
@@ -209,11 +201,9 @@ a {
   margin-bottom: 4rem;
 }
 /* 
-
 =============================
   navigation menu (desktop)
 =============================
-
 */
 .header__links {
   display: none;
@@ -234,11 +224,9 @@ a {
   color: var(--black);
 }
 /* 
-
 ======================================
   create navigation btn (berger bar)
 ========================================
-
 */
 .nav__btn {
   background: var(--white);
@@ -286,11 +274,9 @@ a {
   transform: translateY(-8px) rotate(-45deg);
 }
 /* 
-
 ===========================
   create  header content
 ===========================
-
 */
 .header__contents {
   display: flex;
@@ -319,4 +305,58 @@ a {
   padding: 1.3rem 6.8rem;
   background: var(--orange);
   border-radius: 4rem;
+  margin-bottom: 16rem;
+  transition: all 100ms ease-in 200ms;
+}
+.header__content--btn:hover {
+  text-align: center;
+  padding: 1.3rem 6.8rem;
+  background: var(--white);
+  color: var(--orange);
+  border-radius: 4rem;
+  margin-bottom: 16rem;
+}
+/*
+ ======================================
+  create navigation btn (berger bar)
+========================================
+ */
+.main {
+  height: 50rem;
+}
+.main__services {
+  margin-top: -10rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.main__service {
+  width: 33rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 2rem;
+  padding: 2rem;
+  background: var(--white);
+  color: var(--black);
+  margin-bottom: 2.3rem;
+  flex-grow: 1;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.main__service--img {
+  margin-top: 4rem;
+}
+.main__service--title {
+  font-family: "achivo black";
+  font-size: 1.8rem;
+  padding: 1.2rem;
+}
+.main__service--content {
+  margin-bottom: 4rem;
+  width: 32rem;
 }
