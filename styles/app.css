@@ -316,14 +316,17 @@ a {
   border-radius: 4rem;
   margin-bottom: 16rem;
 }
-/*
- ======================================
-  create navigation btn (berger bar)
-========================================
- */
+/* 
+main
+*/
 .main {
-  height: 50rem;
+  height: 500rem;
 }
+/*
+===========================
+  main side ( service )
+===========================
+ */
 .main__services {
   margin-top: -10rem;
   display: flex;
@@ -359,4 +362,124 @@ a {
 .main__service--content {
   margin-bottom: 4rem;
   width: 32rem;
+}
+/*
+===========================
+  main side ( destinations )
+===========================
+ */
+.destinations {
+}
+.destinations__header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+}
+.destinations__header--title {
+  font-size: 2.5rem;
+  font-family: "achivo black";
+  width: 28rem;
+}
+
+.destinations__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.destination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  flex-grow: 1;
+  background: var(--white);
+  width: 36.5rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.destination__wrap {
+  margin-bottom: 3rem;
+}
+
+.destination__img {
+  position: relative;
+  margin-top: 1.5rem;
+}
+.destination__img--nature {
+  border-radius: 2rem;
+}
+.destination--icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--white);
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 1.3rem;
+}
+.heart__svg path {
+  background-color: #e76f51;
+  color: #e76f51;
+  background: #e76f51;
+  fill: #e76f51;
+}
+.destination__price {
+  width: 14rem;
+  background-color: var(--white);
+  color: var(--orange);
+  position: relative;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: -3rem auto 2rem auto;
+}
+.price {
+  font-family: "Roboto Medium";
+}
+.destination__content {
+}
+.destination__content--title {
+  font-size: 1.8rem;
+  font-family: "achivo black";
+}
+.destination__content--text {
+  width: 27rem;
+  margin-bottom: 3.5rem;
+}
+.destination__content--btn {
+  transition: all 100ms ease-in 200ms;
+}
+.destination__content--btn:hover {
+  background-color: var(--orange);
+}
+.destinations__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.destinations__btn--activ {
+  background-color: transparent;
+  border: 1px solid var(--orange);
+  color: var(--orange);
+  transition: all 100ms ease-in 200ms;
+}
+.destinations__btn--activ:hover {
+  background-color: var(--orange);
+  color: var(--white);
 }
