@@ -365,10 +365,29 @@ main
 }
 /*
 ===========================
+  main side ( shapes )
+===========================
+ */
+.body__shape1 {
+  position: absolute;
+  z-index: -1;
+  right: -52rem;
+  top: -4rem;
+}
+.body__shape2 {
+  position: absolute;
+  top: 72rem;
+  left: -58rem;
+  z-index: -1;
+}
+/*
+===========================
   main side ( destinations )
 ===========================
  */
 .destinations {
+  position: relative;
+  overflow-x: hidden;
 }
 .destinations__header {
   text-align: center;
@@ -376,8 +395,8 @@ main
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 10rem;
-  margin-bottom: 4rem;
+  margin-top: 12rem;
+  margin-bottom: 5.5rem;
 }
 .destinations__header--title {
   font-size: 2.5rem;
@@ -402,12 +421,14 @@ main
   flex-direction: column;
   flex-grow: 1;
   background: var(--white);
-  width: 36.5rem;
   padding: 2rem;
   border-radius: 2rem;
   margin-bottom: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+.destination--hidde {
+  display: none;
 }
 .destination__wrap {
   margin-bottom: 3rem;
@@ -419,6 +440,9 @@ main
 }
 .destination__img--nature {
   border-radius: 2rem;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
 }
 .destination--icon {
   position: absolute;
@@ -428,16 +452,18 @@ main
   height: 4rem;
   background-color: var(--white);
   padding: 0.5rem;
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   border-radius: 1.3rem;
 }
-.heart__svg path {
-  background-color: #e76f51;
-  color: #e76f51;
-  background: #e76f51;
-  fill: #e76f51;
+.heart__svg {
+  color: var(--orange);
+}
+.heart__svg-active {
+  fill: currentColor;
+  color: var(--orange);
 }
 .destination__price {
   width: 14rem;
@@ -462,10 +488,13 @@ main
   margin-bottom: 3.5rem;
 }
 .destination__content--btn {
+  background-color: rgba(141, 141, 141, 0.1);
+  color: var(--gray-brighter);
   transition: all 100ms ease-in 200ms;
 }
 .destination__content--btn:hover {
   background-color: var(--orange);
+  color: var(--white);
 }
 .destinations__btn {
   display: flex;
@@ -473,13 +502,13 @@ main
   justify-content: center;
   margin-top: 3rem;
 }
-.destinations__btn--activ {
+.destinations__btn--active {
   background-color: transparent;
   border: 1px solid var(--orange);
   color: var(--orange);
   transition: all 100ms ease-in 200ms;
 }
-.destinations__btn--activ:hover {
+.destinations__btn--active:hover {
   background-color: var(--orange);
   color: var(--white);
 }
