@@ -133,8 +133,6 @@ a {
   padding: 2rem;
   transition: all 200ms ease-in;
 }
-.mobile-menu {
-}
 .mobile_menu__list {
   margin-bottom: 0.9rem;
 }
@@ -316,12 +314,11 @@ a {
   border-radius: 4rem;
   margin-bottom: 16rem;
 }
-/* 
-main
-*/
-.main {
-  height: 500rem;
+
+/*main*/
+main {
 }
+
 /*
 ===========================
   main side ( service )
@@ -388,6 +385,7 @@ main
 .destinations {
   position: relative;
   overflow-x: hidden;
+  color: var(--black);
 }
 .destinations__header {
   text-align: center;
@@ -477,8 +475,6 @@ main
 .price {
   font-family: "Roboto Medium";
 }
-.destination__content {
-}
 .destination__content--title {
   font-size: 1.8rem;
   font-family: "achivo black";
@@ -511,4 +507,84 @@ main
 .destinations__btn--active:hover {
   background-color: var(--orange);
   color: var(--white);
+}
+/*
+===========================
+  main side ( newsletter )
+===========================
+ */
+.newsletter {
+  background: var(--low-orang);
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  margin-top: 10rem;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.newsletter__content {
+  text-align: center;
+  z-index: 1;
+}
+.newsletter__content--title {
+  font-family: "achivo black";
+  font-size: 3rem;
+  text-align: center;
+  margin: 1.5rem auto;
+}
+.newsletter__content--caption {
+  font-family: "Roboto Medium";
+  margin-bottom: 2rem;
+}
+.newsletter__content--email_box {
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem;
+  height: 7rem;
+}
+.newsletter__content--email_box form {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.email__svg {
+  color: var(--gray-brighter);
+}
+.newsletter__input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  color: var(--gray-brighter);
+  font-size: 1.8rem;
+}
+.newsletter__submit-btn {
+  border-radius: 1.5rem;
+  background-color: var(--orange);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+}
+.send__svg {
+}
+.newsletter__baner {
+  z-index: 1;
+}
+.newsletter__baner--img {
+  width: 100%;
+}
+.newsletter__shape {
+  position: absolute;
+  bottom: -8px;
+  z-index: 0;
+  bottom: -25rem;
+  left: -65rem;
+  transform: rotate3d(1, 1, 1, 25deg);
 }
