@@ -588,3 +588,48 @@ main {
   left: -65rem;
   transform: rotate3d(1, 1, 1, 25deg);
 }
+
+/* footer */
+footer {
+}
+/*
+==================
+  footer(wraper)
+==================
+*/
+.footer__container {
+}
+.footer__wraper-left {
+}
+.footer__wraper-right {
+}
+/*
+===================================
+  footer(wraper-left=>title&link)
+===================================
+*/
+.footer-content {
+}
+.footer__title {
+}
+.footer__content {
+}
+.footer-apps {
+}
+.footer-apps__link {
+}
+.footer-apps__img {
+}
+/*
+===================================
+  footer(wraper-left=>title&link)
+===================================
+*/
+.footer__list {
+}
+.footer-page {
+}
+.footer-page__item {
+}
+.footer-page__link {
+}
