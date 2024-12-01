@@ -2,14 +2,11 @@ let $ = document;
 
 const getBtn = $.querySelector('.nav__btn');
 const getNav = $.querySelector('.nav-menu');
-const getHeartIcon = $.querySelector('.heart__svg');
+const getHeartIcon = $.getElementsByClassName('heart__svg');
 const getHeartContainer = $.querySelector('.destination--icon');
-const getdistination = $.querySelector('.destination');
-const getShowBtn = $.querySelector('.destinations__btn--active');
-const deActiveElem = $.querySelector('.destination--hidde');
 let addClass = false ;
 let hasHeartClass = false;
-let show = true;
+
 
 getBtn.addEventListener('click' , function() {
     if (addClass) {
@@ -23,15 +20,18 @@ getBtn.addEventListener('click' , function() {
     }
 });
 
-getHeartContainer.addEventListener('click' , function () {
-    if (hasHeartClass) {
-        getHeartIcon.classList.remove('heart__svg-active');
-        hasHeartClass = false;
-    }else{
-        getHeartIcon.classList.add('heart__svg-active')
-        hasHeartClass = true;
-    }
-})
-getShowBtn.addEventListener('click' , function () {
-    getdistination.classList.remove('destination--hidde') 
+getHeartContainer.addEventListener("click" ,function () {
+    
+    getHeartIcon.forEach( function (item) {
+        if (hasHeartClass) {
+            item.classList.remove('heart__svg-active');
+            hasHeartClass = false;
+        }else{
+            item.classList.add('heart__svg-active')
+            hasHeartClass = true;
+        }
+        
+    });
+    
+   
 })
