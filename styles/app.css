@@ -11,6 +11,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -317,6 +318,7 @@ a {
 
 /*main*/
 main {
+  margin-bottom: 18rem;
 }
 
 /*
@@ -523,6 +525,7 @@ main {
   padding: 2rem;
   position: relative;
   overflow: hidden;
+  border-radius: 2rem;
 }
 .newsletter__content {
   text-align: center;
@@ -591,17 +594,28 @@ main {
 
 /* footer */
 footer {
+  background-color: var(--low-orang);
+  border-top-right-radius: 9rem;
+  border-top-left-radius: 9rem;
+  padding-bottom: 5rem;
+  color: var(--black);
 }
 /*
 ==================
   footer(wraper)
 ==================
 */
-.footer__container {
+.footer-wraper__container {
+  text-align: center;
 }
 .footer__wraper-left {
+  flex-basis: 42%;
 }
 .footer__wraper-right {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 /*
 ===================================
@@ -611,12 +625,20 @@ footer {
 .footer-content {
 }
 .footer__title {
+  font-size: 1.8rem;
+  font-family: "achivo black";
+  margin-bottom: 1rem;
 }
 .footer__content {
+  margin-bottom: 2.5rem;
 }
 .footer-apps {
+  display: none;
+}
+.footer-apps__mobile {
 }
 .footer-apps__link {
+  margin-right: 1.5rem;
 }
 .footer-apps__img {
 }
@@ -626,10 +648,59 @@ footer {
 ===================================
 */
 .footer__list {
+  width: 100%;
+  margin-bottom: 2rem;
 }
 .footer-page {
 }
 .footer-page__item {
+  margin-bottom: 1rem;
 }
 .footer-page__link {
+  color: var(--black);
+}
+.footer-page__link:hover {
+  color: var(--orange);
+  text-decoration: underline;
+}
+/*
+====================
+  footer(copyright)
+====================
+*/
+.footer__copy-right {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 5rem;
+}
+/*
+====================
+  footer(arrow-pop)
+====================
+*/
+.arrow__pop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 2rem;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.arrow__pop > a {
+  display: flex;
+}
+
+/*
+===========================
+  footer(select container)
+===========================
+*/
+footer > .container {
+  padding-top: 8rem;
 }

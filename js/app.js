@@ -7,7 +7,6 @@ const getHeartContainer = $.querySelector('.destination--icon');
 let addClass = false ;
 let hasHeartClass = false;
 
-
 getBtn.addEventListener('click' , function() {
     if (addClass) {
         getBtn.classList.remove('nav__btn--open');

@@ -13,7 +13,7 @@
 </head>
 <body>
     
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <nav class="nav">
                 <div class="menu__wrapp">
@@ -25,7 +25,7 @@
                             <a href="#" class="menu-list__link menu-list__link--active">Home</a>
                         </li>
                         <li class="menu-list">
-                            <a href="#" class="menu-list__link">Destination</a>
+                            <a href="#destinations" class="menu-list__link">Destination</a>
                         </li>
                         <li class="menu-list">
                             <a href="#" class="menu-list__link">Near me</a>
@@ -43,7 +43,7 @@
                             <a href="#" class="menu-list__link">About</a>
                         </li>
                         <li class="menu-list">
-                            <a href="#" class="menu-list__link">Contact us</a>
+                            <a href="#Contact" class="menu-list__link">Contact us</a>
                         </li>
                     </ul>
                 </div>
@@ -120,7 +120,7 @@
                     <p class="main__service--content">Find the best spots for hunting, fishing & recreational shooting.</p>
                 </div>
             </section>
-            <section class="destinations">
+            <section class="destinations" id="destinations">
                 <div class="destinations__header">
                     <img src="../images & icons/svgs/destination.svg" alt="location" class="destinations__header--icon">
                     <h2 class="destinations__header--title">Explore Destinations
@@ -409,7 +409,15 @@
     </main>
     <footer class="footer">
        <div class="container">
-        <div class="footer__container">
+        <div class="arrow__pop" >
+            <a href="#header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18.68" height="22.175" viewBox="0 0 18.68 22.175">
+                    <path id="Path_958" data-name="Path 958" d="M22.175,9.358a1.43,1.43,0,0,0-1.43-1.43H5.063l5.813-5.42A1.43,1.43,0,1,0,8.923.421L.455,8.311a1.43,1.43,0,0,0,0,2.091L8.923,18.3A1.43,1.43,0,1,0,10.875,16.2L5.063,10.788H20.746A1.43,1.43,0,0,0,22.175,9.358Z" transform="translate(18.68) rotate(90)" fill="#e76f51"/>
+                  </svg>
+            </a>
+              
+        </div>
+        <div class="footer-wraper__container">
             <div class="footer__wraper-left">
                 <div class="footer-content">
                     <h2 class="footer__title">Hipcamp is everywhere you want to camp.</h2>
@@ -425,7 +433,7 @@
                     </a>
                 </div>
                </div>
-               <div class="footer__wraper-right">
+               <div class="footer__wraper-right" id="Contact">
                 <div class="footer__list">
                     <h2 class="footer__title">Get to Know Us</h2>
                     <ul class="footer-page">
@@ -500,7 +508,19 @@
         
         
                </div>
+               <div class="footer-apps__mobile">
+                <h2 class="footer__title">Download Our App</h2>
+                <a href="#" class="footer-apps__link">
+                    <img src="../images & icons/images/app-store-apple.jpg" alt="app stoe" class="footer-apps__img">
+                </a>
+                <a href="#" class="footer-apps__link">
+                    <img src="../images & icons/images/google-play.jpg" alt="google playe" class="footer-apps__img">
+                </a>
+            </div>
         </div>
+        <p class="footer__copy-right">
+            © 2020. All rights reserved.
+        </p>
        </div>
 
         
