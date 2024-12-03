@@ -19,8 +19,7 @@ getBtn.addEventListener('click' , function() {
         addClass = true;
     }
 });
-getHeartContainer.addEventListener("click" ,function () {
-    
+getHeartContainer.addEventListener("click" ,function () { 
     getHeartIcon.forEach( function (item) {
         if (hasHeartClass) {
             item.classList.remove('heart__svg-active');
@@ -28,11 +27,8 @@ getHeartContainer.addEventListener("click" ,function () {
         }else{
             item.classList.add('heart__svg-active')
             hasHeartClass = true;
-        }
-        
-    });
-    
-   
+        }     
+    }); 
 })
 window.addEventListener('load' , function () {
     pageLoader.classList.add('loadering__page--diactive')
