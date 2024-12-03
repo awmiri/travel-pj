@@ -4,6 +4,7 @@ const getBtn = $.querySelector('.nav__btn');
 const getNav = $.querySelector('.nav-menu');
 const getHeartIcon = $.getElementsByClassName('heart__svg');
 const getHeartContainer = $.querySelector('.destination--icon');
+const pageLoader = $.querySelector('.loading_page');
 let addClass = false ;
 let hasHeartClass = false;
 
@@ -18,7 +19,6 @@ getBtn.addEventListener('click' , function() {
         addClass = true;
     }
 });
-
 getHeartContainer.addEventListener("click" ,function () {
     
     getHeartIcon.forEach( function (item) {
@@ -33,4 +33,7 @@ getHeartContainer.addEventListener("click" ,function () {
     });
     
    
+})
+window.addEventListener('load' , function () {
+    pageLoader.classList.add('loadering__page--diactive')
 })
