@@ -891,8 +891,6 @@ main {
   width: 5rem;
   height: 5rem;
 }
-.send__svg {
-}
 .newsletter__baner {
   z-index: 1;
 }
@@ -945,8 +943,7 @@ footer {
   footer(wraper-left=>title&link)
 ===================================
 */
-.footer-content {
-}
+
 .footer__title {
   font-size: 1.8rem;
   font-family: "achivo black";
@@ -958,12 +955,8 @@ footer {
 .footer-apps {
   display: none;
 }
-.footer-apps__mobile {
-}
 .footer-apps__link {
   margin-right: 1.5rem;
-}
-.footer-apps__img {
 }
 /*
 ===================================
@@ -973,8 +966,6 @@ footer {
 .footer__list {
   width: 100%;
   margin-bottom: 2rem;
-}
-.footer-page {
 }
 .footer-page__item {
   margin-bottom: 1rem;
