@@ -748,6 +748,11 @@ main {
 .heart__svg-active {
   fill: currentColor;
   color: var(--orange);
+  transition: all 100ms ease-in;
+}
+.heart__svg-deactive {
+  fill: currentColor;
+  color: var(--white);
 }
 .destination__price {
   width: 14rem;
@@ -1060,7 +1065,7 @@ footer > .container {
   transition: all 200ms ease-in;
 }
 .loadering__page--diactive {
-  opacity: 0;
+  display: none;
 }
 .loader {
   width: 95px;
